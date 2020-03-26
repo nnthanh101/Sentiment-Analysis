@@ -1,7 +1,8 @@
 #!/bin/bash
 set -e
 
-eval $(cat .env | sed 's/^/export /')
+. .env.sh
+# eval $(cat .env | sed 's/^/export /')
 
 started_time=$(date '+%d/%m/%Y %H:%M:%S')
 echo
@@ -18,18 +19,18 @@ echo
 
 python3 --version
 aws --version
-aws-iam-authenticator --help
-terraform -version
-## TODO
-# kubectl version
-# helm list
-# helmsman --v
-# packer -machine-readable version
-echo "NodeJS Environment"
+# aws-iam-authenticator help
+# terraform -version
+# ## TODO
+# # kubectl version
+# # helm list
+# # helmsman --v
+# # packer -machine-readable version
+# echo "NodeJS Environment"
 node -v
-npm -v
-yarn -version
-serverless -version
+# npm -v
+# yarn -version
+# serverless -version
 
 echo
 echo "#########################################################"

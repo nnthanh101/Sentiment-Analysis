@@ -1,7 +1,8 @@
 #!/bin/bash
 set -e
 
-eval $(cat .env | sed 's/^/export /')
+. .env.sh
+# eval $(cat .env | sed 's/^/export /')
 
 started_time=$(date '+%d/%m/%Y %H:%M:%S')
 echo
