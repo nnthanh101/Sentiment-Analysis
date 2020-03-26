@@ -6,7 +6,7 @@ ARG KUBECTL_VERSION=1.17.2
 ARG AWS_IAM_AUTH_VERSION=0.5.0
 
 
-RUN apk -v add --update --no-cache curl zip sed wget
+RUN apk -v add --update --no-cache curl zip sed wget jq gettext
 
 ## Install python3 & awscli
 RUN apk add --update --no-cache python3 && \
