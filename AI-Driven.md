@@ -9,6 +9,8 @@
 <p>You can also capture both the raw and enriched datasets and durably store them in the solution’s data lake. This allows data analysts to quickly and easily perform new types of analytics and ML on this data.</p>
 <h2 id="cost">Cost</h2>
 <p>You are responsible for the cost of the AWS services used while running this reference deployment.  As  of  the  date  of publication,  the  total  cost  for  running  this  solution  with  default settings  in  the  US  East (N.  Virginia)  Region  is  approximately <strong>$190  per  month</strong> for  ingesting 10,000  tweets  per  day  and  storing  them  for  one  year.  Refer  to <a href="#_bookmark22">Appendix  A</a> for  a  breakdown of  the  cost.</p>
+<h2 id="architecture-overview">Architecture Overview</h2>
+<p>Deploying this solution builds the following environment in the AWS Cloud.</p>
 <blockquote>
 <p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
 </blockquote>
