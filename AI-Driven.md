@@ -11,6 +11,7 @@
 <p>You are responsible for the cost of the AWS services used while running this reference deployment.  As  of  the  date  of publication,  the  total  cost  for  running  this  solution  with  default settings  in  the  US  East (N.  Virginia)  Region  is  approximately <strong>$190  per  month</strong> for  ingesting 10,000  tweets  per  day  and  storing  them  for  one  year.  Refer  to <a href="#_bookmark22">Appendix  A</a> for  a  breakdown of  the  cost.</p>
 <h2 id="architecture-overview">Architecture Overview</h2>
 <p>Deploying this solution builds the following environment in the AWS Cloud.</p>
+<p><img src="https://photos.app.goo.gl/7dndWnQiUPa9EZfX9" alt="enter image description here"></p>
 <blockquote>
 <p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
 </blockquote>
