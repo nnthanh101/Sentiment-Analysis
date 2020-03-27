@@ -6,15 +6,30 @@
 
 For more up-to-date information on what's being implemented, take a look at our current [Social Listening Boards](https://github.com/nnthanh101/social-listening/projects/1).
 
-## 1. Environment Setup & Deployment
+To get started with the Social Listening application, you can deploy into your AWS Account by following our [Implementation Guide](./AI-Driven.md)
 
-### 1.1. Docker-Bootstrap
+## 1. Deliverables
+* [x] AI-Driven Social Media Dashboard - Implementation Guide
+* [x] Social Listening: High-Level Architecture, WAR (Security, Reliability, Cost Optimization)
+* [x] [Amazon ECS Fargate](https://ecs-fargate.aws.job4u.io/)
+* [x] Demo: QuickSight Mobile
+* [ ] Next Phase: End-to-end Solution with CI/CD pipeline
+
+## 2. High-Level Architecture
+
+![Social Listening Architecture](./README/social-listening-architecture.png)
+
+## 3. Environment Setup & Deployment
+
+### 3.1. Deploy fargate-twitter-reader on ECS Fargate
 
 ```bash
 ./bootstrap.sh
 ```
 
-### 1.2. Building Lambda Package
+* [ ] ECS/EKS Container - CI/CD pipeline
+
+### 3.2. Building Lambda Package
 
 ```bash
 cd deployment
@@ -27,7 +42,7 @@ version should be a version S3 key prefix
 For example: ./build-s3-dist.sh solutions v1.0
 The template will then expect the source code to be located in the solutions-[region_name]/ai-driven-social-media-dashboard/v1.0/
 
-> CI/CD: TBD
+* [ ] Serverless (Lambda, API-Gateway) - CI/CD pipeline
 
-## CF template and Lambda function
+### 3.3. Cloudformation template and Lambda function
 Located in deployment/dist
