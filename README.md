@@ -23,9 +23,10 @@ To get started with the Social Listening application, you can deploy into your A
     - [x] [AI-Driven Social Media Dashboard - Implementation Guide](./AI-Driven.md)
     - [x] [Serverless Data Lake on AWS](https://datalake.aws.job4u.io/)
 - [x] [Amazon ECS Fargate](https://ecs-fargate.aws.job4u.io/)
+  - [x]  [fargate-twitter-reader Docker](https://hub.docker.com/repository/docker/nnthanh101/fargate-twitter-reader)
 - [x] Infrastructure as Code & Infrastructure is Code
-    - [x] Cloudformation
-    - [x] Terraform
+    - [x] [Cloudformation](https://github.com/nnthanh101/social-listening/tree/master/deployment)
+    - [ ] Terraform
     - [ ] CDK
 
 ## 2. High-Level Architecture
