@@ -8,16 +8,29 @@ For more up-to-date information on what's being implemented, take a look at our 
 
 To get started with the Social Listening application, you can deploy into your AWS Account by following our [Implementation Guide](./AI-Driven.md)
 
-## 1. Deliverables
-* [x] AI-Driven Social Media Dashboard - Implementation Guide
-* [x] Social Listening: High-Level Architecture, WAR (Security, Reliability, Cost Optimization)
-* [x] [Amazon ECS Fargate](https://ecs-fargate.aws.job4u.io/)
-* [x] Demo: QuickSight Mobile
-* [ ] Next Phase: End-to-end Solution with CI/CD pipeline
+## 1. Social Listening - Deliverables
+
+* [x] **Project Overview**: Social Listening and Business Intelligent Dasdboard for Business Users --> Severless Data Lake on AWS
+* [x] **High-Level Architecture**: Infrastructure as Code & Serverless Data Lake
+* [x] **Live Demo**: [QuickSight Mobile](https://aws.amazon.com/blogs/big-data/announcing-the-new-mobile-app-for-amazon-quicksight/), AWS Single Sign-On
+* [x] **WAR - Well Architected Review**: Security, Reliability, Cost Optimization
+* [x] Modern App [Amazon ECS Fargate](https://ecs-fargate.aws.job4u.io/)
+* [x] Next Phase: End-to-end Solution with CI/CD pipeline, Click-Streams & Pinpoint integration, ...
+* [ ] Lesson Learns & Improvements
+
+> **Developer Content**
+- [x] Serverless Data Lake:
+    - [x] [AI-Driven Social Media Dashboard - Implementation Guide](./AI-Driven.md)
+    - [x] [Serverless Data Lake on AWS](https://datalake.aws.job4u.io/)
+- [x] [Amazon ECS Fargate](https://ecs-fargate.aws.job4u.io/)
+- [x] Infrastructure as Code & Infrastructure is Code
+    - [x] Cloudformation
+    - [x] Terraform
+    - [ ] CDK
 
 ## 2. High-Level Architecture
 
-![Social Listening Architecture](./README/social-listening-architecture.png)
+![Social Listening Architecture](./README/Architecture.png)
 
 ## 3. Environment Setup & Deployment
 
