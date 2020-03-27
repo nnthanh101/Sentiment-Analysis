@@ -54,5 +54,7 @@ RUN curl -LO https://releases.hashicorp.com/packer/1.5.4/packer_1.5.4_linux_amd6
 RUN apk add --update --no-cache nodejs nodejs-npm yarn && \
     npm install -g serverless
 
-
+VOLUME /root/.aws
+VOLUME /project
 WORKDIR /project
+# ENTRYPOINT ["aws"]

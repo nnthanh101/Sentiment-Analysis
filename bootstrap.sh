@@ -21,4 +21,31 @@ echo "Docker build & push >> finished at ${ended_time}"
 echo "#########################################################"
 echo
 
-docker run -it --rm -v ${PWD}:/project docker-bootstrap bash -c 'chmod +x deploy.sh; ./deploy.sh'
+
+echo "#########################################################"
+echo "Running deploy.sh ..."
+echo "#########################################################"
+echo
+
+docker run -it --rm \
+       -v "$HOME/.aws:/root/.aws" \
+       -v $PWD:/project \
+       docker-bootstrap bash -c 'chmod +x deploy.sh; ./deploy.sh'
+
+# docker run -it --rm \
+#        -v ${PWD}:/project \
+#        docker-bootstrap bash -c 'chmod +x deploy.sh; ./deploy.sh'
+
+# docker run -it --rm \
+#        -e ${AWS_ACCESS_KEY_ID} \
+#        -e ${AWS_SECRET_ACCESS_KEY} \
+#        -e ${AWS_DEFAULT_REGION} \
+#        -v ${PWD}:/project docker-bootstrap bash -c 'chmod +x deploy.sh; ./deploy.sh'
+
+## TODO: if using AWS SSO
+# docker run -it --rm \
+#        -e ${AWS_ACCESS_KEY_ID} \
+#        -e ${AWS_SECRET_ACCESS_KEY} \
+#        -e ${AWS_DEFAULT_REGION} \
+#        -e ${AWS_SESSION_TOKEN} \
+#        -v ${PWD}:/project docker-bootstrap bash -c 'chmod +x deploy.sh; ./deploy.sh'       
