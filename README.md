@@ -30,7 +30,7 @@ To get started with the Social Listening application, you can deploy into your A
 
 ## 2. High-Level Architecture
 
-![Social Listening Architecture](./README/Architecture.png)
+![Social Listening Architecture](README/Architecture.png)
 
 ## 3. Environment Setup & Deployment
 
