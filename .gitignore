@@ -1,5 +1,6 @@
 .env.sh
 fargate-twitter-reader/node_modules/
+fargate-twitter-reader/twitter_reader_config.js
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
