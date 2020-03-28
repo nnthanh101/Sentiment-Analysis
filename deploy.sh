@@ -18,7 +18,9 @@ echo "#########################################################"
 echo
 
 python3 --version
+pip3 --version
 aws --version
+cdk --version
 # aws-iam-authenticator help
 # terraform -version
 # ## TODO
@@ -37,6 +39,13 @@ echo "#########################################################"
 echo "Deployment ..."
 echo "#########################################################"
 echo
+
+cd cdk-python/ServerlessWidgetService
+pip install -r requirements.txt
+. ../../.env.sh 
+echo ${AWS_PROFILE}
+echo ${AWS_ACCESS_KEY_ID}
+cdk deploy
 
 echo
 echo "#########################################################"

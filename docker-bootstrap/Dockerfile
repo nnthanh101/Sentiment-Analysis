@@ -11,6 +11,7 @@ RUN apk -v add --update --no-cache curl zip sed wget jq gettext
 ## Install python3 & awscli
 RUN apk add --update --no-cache python3 && \
     pip3 install --upgrade pip && \
+    pip3 install --upgrade virtualenv && \
     pip3 install awscli && \
     rm -rf linux-amd64 && \
     rm -f /var/cache/apk/*
@@ -50,9 +51,12 @@ RUN curl -LO https://releases.hashicorp.com/packer/1.5.4/packer_1.5.4_linux_amd6
     chmod +x packer && \
     mv ./packer /usr/local/bin/packer
 
-## Installing node, npm,  
+## Installing node, npm, yarn, serverless.com framework 
 RUN apk add --update --no-cache nodejs nodejs-npm yarn && \
     npm install -g serverless
+
+## Installing CDK
+RUN npm install -g aws-cdk
 
 VOLUME /root/.aws
 VOLUME /project

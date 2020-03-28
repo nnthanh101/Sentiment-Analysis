@@ -35,7 +35,7 @@ To get started with the Social Listening application, you can deploy into your A
 
 ## 3. Environment Setup & Deployment
 
-### 3.1. Deploy fargate-twitter-reader on ECS Fargate
+### 3.1. Deploy Bootstrap DOcker
 
 ```bash
 ./bootstrap.sh
@@ -43,7 +43,27 @@ To get started with the Social Listening application, you can deploy into your A
 
 * [ ] ECS/EKS Container - CI/CD pipeline
 
-### 3.2. Building Lambda Package
+### 3.2. CDK - Infrastructure is Code
+
+```
+cd cdk-python/ServerlessWidgetService/
+
+pip install -r requirements.txt    # Best to do this in a virtualenv
+
+. ../../.env.sh                    # social-listening/.env.sh
+cdk deploy                         # Deploys the CloudFormation template
+
+## Afterwards
+cdk destroy
+```
+
+### 3.3. Deploy fargate-twitter-reader on ECS Fargate
+
+```bash
+./bootstrap.sh
+```
+
+### 3.4. Building Lambda Package
 
 ```bash
 cd deployment
@@ -58,5 +78,5 @@ The template will then expect the source code to be located in the solutions-[re
 
 * [ ] Serverless (Lambda, API-Gateway) - CI/CD pipeline
 
-### 3.3. Cloudformation template and Lambda function
+### 3.4. Cloudformation template and Lambda function
 Located in deployment/dist

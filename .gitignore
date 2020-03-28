@@ -131,3 +131,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+cdk-python/ServerlessWidgetService/cdk.out/
+cdk
