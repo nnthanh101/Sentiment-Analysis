@@ -1,4 +1,4 @@
-# Voice of the Customer (VoC)
+# Voice of the Customer (VoC) utilizing Serverless Architecture and Sentiment Analysis
 
 **Voice of the Customer (VoC)*** to enhance customer experience with serverless architecture and sentiment analysis, using Amazon Kinesis, Amazon Athena, Amazon QuickSight, Amazon Comprehend, and ChatGPT-LLMs for sentiment analysis.
 
