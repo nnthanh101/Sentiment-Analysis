@@ -2,7 +2,7 @@
 
 **Voice of the Customer (VoC)*** to enhance customer experience with serverless architecture and sentiment analysis, using Amazon Kinesis, Amazon Athena, Amazon QuickSight, Amazon Comprehend, and ChatGPT-LLMs for sentiment analysis.
 
-WIP ==> 
+!!! The Social-Listening-Twitter-Comprehend branch is for backup purposes only !!! 
 
 **AI-Driven Social Media Dashboard** is a complete web application that provides Voice of Customer Analytics through Social Media: Build a Social Media Dashboard using Artificial Intelligence and Business Intelligence Services including end-to-end testing, Serverless (Lambda, API-Gateway), Data Lake (Glue, Athena, Quicksight) and CI/CD. 
 
